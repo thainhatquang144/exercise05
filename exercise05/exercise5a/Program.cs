@@ -96,8 +96,15 @@ namespace Exercise5a
            
             return false;
         }
-        public static bool IsLower(char c)
+        public static bool IsLower(char d)
         {
+            for (int i = 97; i <= 122; i++)
+            {
+                Console.Write((char)i);
+                if (d.Equals((char)i))
+                    return true;
+            }
+
             return false;
         }
         public static char ToUpper(char a)
